@@ -255,7 +255,8 @@ $(document).ready(function(){
     }
 });</script>
 	<script>
-	$(document).ready(function() {
+	/* FadeIn Scroll */
+$(document).ready(function() {
     
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
@@ -263,13 +264,14 @@ $(document).ready(function(){
         /* Check the location of each desired element */
         $('.hideme').each( function(i){
             
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
             
+           var top_of_object = $(this).offset().top;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+             
             /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
+            if( bottom_of_window > top_of_object ){
                 
-                $(this).animate({'opacity':'1'},1500);
+                $(this).animate({'opacity':'1'},900);
                     
             }
             
@@ -278,6 +280,7 @@ $(document).ready(function(){
     });
     
 });</script>
+	
 </head>
 <body style="background-color:#222" data-spy="scroll" data-target="#spy">
 <!---Nav--->
@@ -346,7 +349,7 @@ $(document).ready(function(){
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div id="tool-2" style="background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)); margin:10px; color:white; min-height:460px">
+          <div id="tool-2" style="background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)); margin:10px; color:white; min-height:460px" class="hideme">
             <h3 style="padding:15px 0px 0px 0px; color:#444">Technologies</h3>
             <ul style="text-align:left; padding-top:5px; padding-bottom:15px; padding-right:15px; color:#444">
 				<li>FB Ads Manager</li><li> LinkedIn Ad Manager </li>
@@ -379,72 +382,72 @@ $(document).ready(function(){
     </div>
 	  <div class="row serif" style="width:100%; padding:0; margin:0">
       <div class="col-sm-12 col-md-3 col-lg-3" style="text-align:right">
-        <p class="role">Digital Adoption Product Owner</p>
+        <p class="role hideme">Digital Adoption Product Owner</p>
       </div>
       <div class="col-sm-12 col-md-9 col-lg-9" style="padding-left:0px">
         <ul>
-          <li style="padding-bottom:5px">Responsible for establishing and driving overall strategy for digital adoption, and digital engagement campaigns.</li>
-          <li style="padding-bottom:5px">Responsible for recommending new content and campaigns based on VOC data, behavioral analytics, key business metrics and user session replay.</li>
-			<li style="padding-bottom:5px"> Responsible for innovation and end-to-end comm strategy across channels.</li>
+          <li style="padding-bottom:5px" class="hideme">Responsible for establishing and driving overall strategy for digital adoption, and digital engagement campaigns.</li>
+          <li style="padding-bottom:5px" class="hideme">Responsible for recommending new content and campaigns based on VOC data, behavioral analytics, key business metrics and user session replay.</li>
+			<li style="padding-bottom:5px" class="hideme"> Responsible for innovation and end-to-end comm strategy across channels.</li>
         </ul>
 		  </div></div>
 	      <div class="col-12">
-      <p id="ecp" style="font-size:20px; font-style:oblique; padding-left:0px; padding-right:0px; margin-left:0px; margin-right:0px; text-align:center !important">----As part of the Early Career Rotational Program----</p>
+      <p id="ecp" style="font-size:20px; font-style:oblique; padding-left:0px; padding-right:0px; margin-left:0px; margin-right:0px; text-align:center !important" class="hideme">----As part of the Early Career Rotational Program----</p>
     </div>
     <div class="row serif" style="width:100%; padding:0; margin:0">
       <div class="col-sm-12 col-md-3 col-lg-3" style="text-align:right">
-        <p class="role">Talent Brand and Experience</p>
+        <p class="role hideme">Talent Brand and Experience</p>
       </div>
       <div class="col-sm-12 col-md-9 col-lg-9">
         <ul class="description-ul">
-          <li style="padding-bottom:5px">A first member of this new HR team that applies contemporary marketing practices to Recruiting.</li>
-          <li style="padding-bottom:5px">Supporting/leading a marketing mix of: conferences and events, email, organic/paid social, job boards, SEO, and more.</li>
-          <li style="padding-bottom:5px">Leading web analytics for careers.massmutual.com.</li>
-          <li style="padding-bottom:5px">Supporting refresh of MM's Employee Value Proposition (EVP).</li>
+          <li style="padding-bottom:5px" class="hideme">A first member of this new HR team that applies contemporary marketing practices to Recruiting.</li>
+          <li style="padding-bottom:5px" class="hideme">Supporting/leading a marketing mix of: conferences and events, email, organic/paid social, job boards, SEO, and more.</li>
+          <li style="padding-bottom:5px" class="hideme">Leading web analytics for careers.massmutual.com.</li>
+          <li style="padding-bottom:5px" class="hideme">Supporting refresh of MM's Employee Value Proposition (EVP).</li>
         </ul>
       </div>
       <div class="col-sm-12 col-md-3 col-lg-3" style="text-align:right">
-        <p class="role">LifeScore Labs</p>
+        <p class="role hideme">LifeScore Labs</p>
       </div>
       <div class="col-sm-12 col-md-9 col-lg-9">
         <ul  class="description-ul">
-          <li style="padding-bottom:5px">Helped plan and execute initial go-to-market strategy as the first marketer to join this ~8 month old fintech startup.</li>
-          <li style="padding-bottom:5px">Brought on and led rollout of HubSpot as the integrated CRM, CMS, and Marketing Automation platform of choice.</li>
-          <li style="padding-bottom:5px">Built numerous MVPs: social media, email, direct mail, PR, print, video, conference assets, media buys, a webinar, and more.</li>
+          <li style="padding-bottom:5px" class="hideme">Helped plan and execute initial go-to-market strategy as the first marketer to join this ~8 month old fintech startup.</li>
+          <li style="padding-bottom:5px" class="hideme">Brought on and led rollout of HubSpot as the integrated CRM, CMS, and Marketing Automation platform of choice.</li>
+          <li style="padding-bottom:5px" class="hideme">Built numerous MVPs: social media, email, direct mail, PR, print, video, conference assets, media buys, a webinar, and more.</li>
         </ul>
       </div>
       <div class="col-sm-12 col-md-3 col-lg-3" style="text-align:right">
-        <p class="role">Integrated Marketing</p>
+        <p class="role hideme">Integrated Marketing</p>
       </div>
       <div class="col-sm-12 col-md-9 col-lg-9">
         <ul  class="description-ul">
-          <li style="padding-bottom:5px">Operated as an account manager on this new team that partnered with BUs to help execute coordinated campaigns.</li>
-          <li style="padding-bottom:5px">Helped manage nearly $100K in media across organic/paid social, industry media buys, email, and SEM.</li>
+          <li style="padding-bottom:5px" class="hideme">Operated as an account manager on this new team that partnered with BUs to help execute coordinated campaigns.</li>
+          <li style="padding-bottom:5px" class="hideme">Helped manage nearly $100K in media across organic/paid social, industry media buys, email, and SEM.</li>
         </ul>
       </div>
       <div class="col-sm-12 col-md-3 col-lg-3" style="text-align:right">
-        <p class="role">Brand Management</p>
+        <p class="role hideme">Brand Management</p>
       </div>
       <div class="col-sm-12 col-md-9 col-lg-9">
         <ul  class="description-ul">
-          <li style="padding-bottom:5px">Managed requests, and provided brand guidance, for the MassMutual logo.</li>
-          <li style="padding-bottom:5px">Part of this Fortune 100 company’s Brand Refresh team; contributing most notably to the corporate PPT templates.</li>
+          <li style="padding-bottom:5px" class="hideme">Managed requests, and provided brand guidance, for the MassMutual logo.</li>
+          <li style="padding-bottom:5px" class="hideme">Part of this Fortune 100 company’s Brand Refresh team; contributing most notably to the corporate PPT templates.</li>
         </ul>
       </div>
       <div class="col-12" style="padding:30px 0px 0px 0px">
-        <h3 style="font-size:28px"> Global Partners<span style="font-size:20px"> // Summer 2015</span></h3>
+        <h3 style="font-size:28px" class="hideme"> Global Partners<span style="font-size:20px"> // Summer 2015</span></h3>
       </div>
       <div class="row" style="width:100%; padding:0; margin:0">
-        <div class="col-sm-12 col-md-12 col-lg-12" style="padding-left:0">
+        <div class="col-sm-12 col-md-12 col-lg-12 hideme" style="padding-left:0">
           <p>As a <strong>Brand Marketing Intern</strong> I managed mystery shop reporting for this Fortune 300 energy company.</p>
         </div>
       </div>
       <div class="col-12" style="padding:30px 0px 0px 0px">
-        <h3 style="font-size:28px">Mondelez Intl.<span style="font-size:20px"> // Summer 2014</span></h3>
+        <h3 style="font-size:28px" class="hideme">Mondelez Intl.<span style="font-size:20px"> // Summer 2014</span></h3>
       </div>
       <div class="row" style="width:100%; padding:0px 0px 60px 0px; margin:0">
         <div class="col-sm-12 col-md-12 col-lg-12" style="padding-left:0">
-          <p>As a <strong>Sales Representative Intern</strong> I shadowed vendors of this Fortune 200 snack company at grocery retail. </p>
+          <p class="hideme">As a <strong>Sales Representative Intern</strong> I shadowed vendors of this Fortune 200 snack company at grocery retail. </p>
         </div>
       </div>
     </div>
@@ -480,37 +483,37 @@ $(document).ready(function(){
 color:#444; z-index:400; position:relative; min-height:95vh;">
   <div id="Academic" style="position:relative; top:-55px"></div>
   <div style="max-width:800px; margin:auto"><div class="col-12" style="margin:0; text-align:center; z-index:200">
-    <h2 style="padding:10vh 0px 20px 0px; ">Academic</h2>
+    <h2 style="padding:10vh 0px 20px 0px;" class="hideme">Academic</h2>
   </div>
   <div class="col-12" style="padding:10px 0px; text-align:left">
-    <h3 style="font-weight:bold; padding-bottom:10px; border-bottom: 2px solid #666">Graduate</h3>
+    <h3 style="font-weight:bold; padding-bottom:10px; border-bottom: 2px solid #666" class="hideme">Graduate</h3>
   </div>
   <div class="row" style="width:100%; padding:0; margin:0; text-align:left">
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align:right">
       <div class="row"><div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">
-		  <p class="role" style="color:#444;">Umass Isenberg<br><span style="font-size:14px; font-weight:300;">Fall 2018 - Present</span></p>
+		  <p class="role hideme" style="color:#444;">Umass Isenberg<br><span style="font-size:14px; font-weight:300;">Fall 2018 - Present</span></p>
 		</div></div></div>
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-      <p style="color:#444; margin-bottom:0px">4-course cohort offered through MM's rotational program. 4.0 GPA </p><ul><li>Business Data Analysis & Stat. Methods // Spring 2020</li><li>Business Intelligence and Analytics // Fall 2019</li><li>Data Management for Leaders // Spring 2019</li><li>Project Management // Fall 2018</li></ul>
+      <p style="color:#444; margin-bottom:0px" class="hideme">4-course cohort offered through MM's rotational program. 4.0 GPA </p><ul><li class="hideme">Business Data Analysis & Stat. Methods // Spring 2020</li><li class="hideme">Business Intelligence and Analytics // Fall 2019</li><li class="hideme">Data Management for Leaders // Spring 2019</li><li class="hideme">Project Management // Fall 2018</li></ul>
     </div>
   </div><br>
   <div class="col-12" style="padding:20px 0px 10px 0px; text-align:left;">
-    <h3 style="font-weight:bold; padding-bottom:10px; border-bottom: 2px solid #666">Undergraduate</h3>
+    <h3 style="font-weight:bold; padding-bottom:10px; border-bottom: 2px solid #666" class="hideme">Undergraduate</h3>
   </div>
   <div class="row" style="width:100%; padding:0; margin:0; text-align:left;">
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align:right">
-      <p class="role" style="color:#444">Bentley University<br>
+      <p class="role hideme" style="color:#444">Bentley University<br>
 		  <span style="font-size:14px; font-weight:300"> 2013 - 2016</span></p>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-		<p style="margin-bottom:0px"><span style="color:#444">Graduated Summa Cum Laude (3.85 GPA) at age 20.</span></p><ul><li>Honors Program</li><li>Peer Tutor for the Office of Academic Services.</li></ul>
+		<p style="margin-bottom:0px" class="hideme"><span style="color:#444">Graduated Summa Cum Laude (3.85 GPA) at age 20.</span></p><ul><li class="hideme">Honors Program</li><li class="hideme">Peer Tutor for the Office of Academic Services.</li></ul>
     </div>
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align:right">
-      <p class="role" style="color:#444;">Vermont Technical College<br>
+      <p class="role hideme" style="color:#444;">Vermont Technical College<br>
 		  <span style="font-size:14px; font-weight:300">2012 - 2013</span> </p>
     </div>
     <div class="ccol-xs-12 col-sm-8 col-md-8 col-lg-8">
-      <p><span style="color:#444">11 courses taken as a high school senior. 3.97 GPA </span> </p>
+      <p class="hideme"><span style="color:#444">11 courses taken as a high school senior. 3.97 GPA </span> </p>
 	  </div>
   </div>
 	</div></div>
@@ -518,13 +521,13 @@ color:#444; z-index:400; position:relative; min-height:95vh;">
 <div class="container-fluid px-0 bg-image" style="padding-bottom:60px; background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.4)), url('img/iphone11.jpg'); background-position:center; background-size:cover; text-align:center; background-attachment:fixed; position:relative; z-index:300; min-height:83.1vh">
   <div id="Resume" style="position:relative; top:-55px"></div>
   <div class="col-12" style="margin:0; text-align:center; color:white">
-    <h2 style="padding:5vh">Let's Chat</h2>
+    <h2 style="padding:5vh" class="hideme">Let's Chat</h2>
   </div>
   <div class="row" style="width:100%; padding:0; margin:0;">
     <div class="col-sm-12 col-md-12 col-lg-12" style="text-align:center">
-      <p style="color:white">rfmalinowski@gmail.com<br>
-        802-399-0780<br>
-        www.linkedin.com/in/robertmalinowski</p>
+      <p style="color:white" class="hideme">rfmalinowski@gmail.com<br>
+		  <span class="hideme">802-399-0780</span><br>
+		  <span class="hideme">www.linkedin.com/in/robertmalinowski</span></p>
     </div>
     <div class="col-sm-12 col-md-12 col-lg-12" style="text-align:center">
       <a href="RobMalinowskiResume_May2020.pdf"><img src="img/robmalinowski_resume.jpg" style="max-width:250px; margin:auto; border-radius:10px" alt="robmalinowski_resume" class="center-block">
@@ -536,7 +539,7 @@ color:#444; z-index:400; position:relative; min-height:95vh;">
   </div>
 </div>
 <div class="container-fluid px-0" style="background-color:#2f2f2f; height:10vh; text-align:center; position:relative; z-index:999">
-  <h2 style="color:white; padding-top:4vh; font-size: 12px"> (C) 2020 Rob Malinowski. All rights reserved.</h2>
+  <h2 class="hideme" style="color:white; padding-top:4vh; font-size: 12px"> (C) 2020 Rob Malinowski. All rights reserved.</h2>
 </div>
 
 	</body>
