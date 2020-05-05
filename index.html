@@ -39,6 +39,10 @@ img {
     transform: scaleY(1.05);
     padding-top: 5px;
 }
+	.hideme
+{
+    opacity:0;
+}
 
 @media  (max-width: 767px) {
 .role {
@@ -250,6 +254,30 @@ $(document).ready(function(){
         });
     }
 });</script>
+	<script>
+	$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});</script>
 </head>
 <body style="background-color:#222" data-spy="scroll" data-target="#spy">
 <!---Nav--->
@@ -276,9 +304,9 @@ $(document).ready(function(){
   <!---Bio--->
   <section class="container-fluid px-0 big" style="background-color:#FBFBFB; text-align:center; padding-bottom:20px; position:relative; z-index:900; min-height:110vh">
     <div id="Bio" style="position:relative; top:-55px;"></div>
-    <h2 style="padding:7vh 20px; color:#242424">So tell us a bit about yourself.</h2>
+    <h2 style="padding:7vh 20px; color:#242424" class="hideme">So tell us a bit about yourself.</h2>
 	 
-    <p style="max-width:800px; margin:auto; text-align:left; padding:0px 30px">
+    <p style="max-width:800px; margin:auto; text-align:left; padding:0px 30px" class="hideme">
 		
 		If it were actually real and accepted title, I'm what you would call "A Full Stack Marketer." You could also go with less fun descriptors like "Generalist," "T-shaped," or maybe even a slightly more candid "Swiss Army Knife." They all get at more or less the same thing &mdash; someone whose value proposition as a professional is largely characterized by versatility. Being fortunate enough to spend the first four years of my career in a marketing rotational program, I've had exposure to a wide breadth of products, teams, and tools. I've explored the far reaches of both Marketing's art and science &mdash; everything from PMS color values to UTM tracking tags. Gravitating toward the technical side especially in my last couple rotations, I even ventured into the developer realm to teach myself HTML and CSS outside of work. In fact this website is actually all coded by hand &mdash; which was a personal challenge for myself to move my former website off of Squarespace. Definitely learned alot about DNS's in the process haha.<br><br>As you can probably already tell, I'm naturally curious and a lifelong learner. And while I'm driven to become the best marketer I can possibly be, I take way more pride in being a team player and a builder of empowerment culture. I want everyone who works with me to feel like they have an environment where they can produce work that defines their careers. It’s easy to say, but to actually build that culture it takes trust and communication. It’s not something that’s built overnight nor something one person can build by themselves, but it’s something that I can have an order of magnitude of influence on just by doing my part. It’s the little things of asking quieter people for their opinions during meetings, giving people praise to their managers, checking in on people you haven’t heard from in a while, and most importantly — letting people know that if there’s anything I can do to help you I’m going to do everything in my power to do so. One of my favorite quotes is Maya Angelou's “people will forget what you said, people will forget what you did, but people will never forget how you made them feel.”<br><br>
 		Feel free to reach out!<br><br>
@@ -294,10 +322,10 @@ $(document).ready(function(){
   <div class="container-fluid bg-image" style="background-image:url('img/toolbox.jpg'); background-attachment: fixed; background-position:center; background-size:cover; text-align:center; position:relative; z-index:200; min-height:110vh">
     <div id="Toolkit" style="position:relative; top:-55px"></div>
     <div style="background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)); text-align:center; min-height:110vh" class="row center-block big">
-      <h2 style="padding-top:10vh; padding-bottom: 5vh; color:white; background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)); width:100%">My Toolbox</h2>
+      <h2 style="padding-top:10vh; padding-bottom: 5vh; color:white; background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)); width:100%" class="hideme">My Toolbox</h2>
       <div class="row" style="width:100%; padding:0; margin:0px 0px 80px 0px">
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <div id="tool-1" style="background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)); margin:10px; color:#444; min-height:460px">
+          <div id="tool-1" style="background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)); margin:10px; color:#444; min-height:460px" class="hideme">
             <h3 style="padding:15px 0px 0px 0px">Knowledge Areas</h3>
             <ul style="text-align:left; padding-top:5px; padding-bottom:15px; padding-right:15px">
               <li>Best practices on all Mktg channels</li>
@@ -343,10 +371,10 @@ $(document).ready(function(){
   <div class="container-fluid big" style="background-color:#f5f5f5; position:relative; z-index:200">
     <div id="WorkHistory" style="position:relative; top:-55px"></div>
     <div class="col-12" style="margin:0; text-align:center">
-      <h2 style="padding:10vh 0vh">Professional Experience</h2>
+      <h2 style="padding:10vh 0vh" class="hideme">Professional Experience</h2>
     </div>
     <div class="col-12" style="padding-left:0px">
-      <h3 style="font-size:28px"> MassMutual <span style="font-size:20px"> // 2016-Present</span></h3>
+      <h3 style="font-size:28px" class="hideme"> MassMutual <span style="font-size:20px"> // 2016-Present</span></h3>
       
     </div>
 	  <div class="row serif" style="width:100%; padding:0; margin:0">
