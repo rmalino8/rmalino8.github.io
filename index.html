@@ -242,6 +242,14 @@ $(document).ready(function(){
    $('#navbarNavAltMarkup').removeClass("show");
 }); 
 	</script>
+	<script>
+	$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) { //use `this`, not `document`
+        $('.bounce').css({
+            'display': 'none'
+        });
+    }
+});</script>
 </head>
 <body style="background-color:#222" data-spy="scroll" data-target="#spy">
 <!---Nav--->
