@@ -1,584 +1,600 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <title>MyResume Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
 
-<link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="The website of marketing professional Rob Malinowski"/>
-	<meta property="og:title" content="Rob Malinowski"/>
-	<meta property="og:image" content="img/Website-Thumbnail.png"/>
-<meta property="og:description" content="The website of marketing professional Rob Malinowski."/>
-<meta property="og:url" content="robmalinowski.com" />
-	
-	
-	
-<title>Rob Malinowski</title>
-<style>
-	html {
-  scroll-behavior: smooth;
-}
-	body {
-		 -webkit-overflow-scrolling:touch;
-	}
-	.bg-image{
-		  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	}
-.container {
-    background: #f9f9f9;
-}
-.flex-column {
-    max-width: 260px;
-}
-img {
-    margin: 0px 0px;
-}
-.scale {
-    transform: scaleY(1.05);
-    padding-top: 5px;
-}
-	.hideme
-{
-    opacity:0;
-}
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-@media  (max-width: 767px) {
-.role {
-    text-align: left;
-	margin-bottom:0px !important;
-}
-	.bio-h2 {
-		padding:10px 30px !important;
-	}
-	.bg-image {
-		background-attachment: scroll !important;
-	}
-	#h1-container {
-		position:relative !important;
-	}
-	.description-ul {
-		padding-left:25px;
-	}
-	h1 {
-		font-size:30px;
-		padding-top:50vh !important;
-	}
-	#ecp {
-		font-size:14px !important;
-	}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-}
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-@media (min-width: 1000px) {
-.big {
-    padding: 0 15vh;
-}
-}
-html {
-    scroll-behavior: smooth;
-}
-p, .serif {
-    color: #242424;
-    font-family: 'Crimson Text', Serif;
-    font-size: 18px;
-}
-ul {
-    padding-left: 40px;
-	padding-right:5px;
-	font-family: 'Crimson Text', Serif;
-	font-size:18px
-}
-.role {
-    font-weight: 500;
-    font-family: sans-serif;
-}
-h3 {
-    font-size: 24px;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-	h2 {
-    font-size: 40px;
-		font-family: 'Source Sans Pro', sans-serif;
-}
-a {
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-}
-.active {
-    font-family: 'Droid Sans',;
-    font-size: 14px;
-    color: red;
-    text-decoration: none;
-    line-height: 50px;
-}
-.nav-item>a {
-    height: 30px;
-    font-size: 12px;
-    line-height: 30px;
-    margin-top: 0px;
-    padding-top: 0px;
-    color: white;
-    background-color: transparent;
-}
-.bounce {
-    animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
-    -moz-animation: bounce 3s infinite;
-    -o-animation: bounce 3s infinite;
-}
-@keyframes bounce {
-0%, 20%, 50%, 80%, 100% {
-transform: translateY(0);
-}
-40% {
-transform: translateY(-30px);
-}
-60% {
-transform: translateY(-15px);
-}
-}
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-</style>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<script>
-		var TxtType = function (el, toRotate, period) {
-	'use strict'; {
-		this.toRotate = toRotate;
-		this.el = el;
-		this.loopNum = 0;
-		this.period = parseInt(period, 10) || 2000;
-		this.txt = '';
-		this.tick();
-		this.isDeleting = false;
-	}
-};
-
-TxtType.prototype.tick = function () {
-	'use strict'; {
-		var i = this.loopNum % this.toRotate.length;
-		var fullTxt = this.toRotate[i];
-
-		if (this.isDeleting) {
-			this.txt = fullTxt.substring(0, this.txt.length - 1);
-		} else {
-			this.txt = fullTxt.substring(0, this.txt.length + 1);
-		}
-
-		this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-		var that = this;
-		var delta = 200 - Math.random() * 180;
-
-		if (this.isDeleting) {
-			delta /= 3;
-		}
-
-		if (!this.isDeleting && this.txt === fullTxt) {
-			delta = this.period;
-			this.isDeleting = true;
-		} else if (this.isDeleting && this.txt === '') {
-			this.isDeleting = false;
-			this.loopNum++;
-			delta = 500;
-		}
-
-		setTimeout(function () {
-			that.tick();
-		}, delta);
-	}
-};
-
-window.onload = function () {
-	'use strict'; {
-		var elements = document.getElementsByClassName('typewrite');
-		for (var i = 0; i < elements.length; i++) {
-			var toRotate = elements[i].getAttribute('data-type').split(", ");
-			var period = elements[i].getAttribute('data-period');
-			if (toRotate) {
-				new TxtType(elements[i], toRotate, period);
-			}
-		}
-		// INJECT CSS
-		var css = document.createElement("style");
-		css.type = "text/css";
-		css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; color:white}";
-		document.body.appendChild(css);
-	}
-};
-	</script>
-	<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-	<script>
-		$(document).on("click", function() {
-   $('#navbarNavAltMarkup').removeClass("show");
-}); 
-	</script>
-	<script>
-	$(window).scroll(function() {
-    if ($(this).scrollTop() > 200) { //use `this`, not `document`
-        $('.bounce').css({
-            'display': 'none'
-        });
-    }
-});</script>
-	<script>
-	/* FadeIn Scroll */
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            
-           var top_of_object = $(this).offset().top;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-             
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > top_of_object ){
-                
-                $(this).animate({'opacity':'1'},900);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});</script>
-	
+  <!-- =======================================================
+  * Template Name: MyResume - v2.1.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body style="background-color:#222" data-spy="scroll" data-target="#spy">
-<!---Nav--->
-<nav id="navbar" class="navbar navbar-dark navbar-expand-lg navbar-light" style="position:fixed; width:100%; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)); z-index:999; transition: top 0.5s; margin-top:-1px"> <a class="navbar-brand" style="color:white; font-size:15px" href="#">ROB MALINOWSKI</a>
-  <button id="navbar-button" class="navbar-toggler" style="border:none" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div id="spy" class="navbar-nav"> <a class="nav-item nav-link" href="#Bio">BIO</a> <a class="nav-item nav-link" href="#Toolkit">TOOLKIT</a> <a class="nav-item nav-link" href="#WorkHistory">WORK HISTORY</a> <a class="nav-item nav-link" href="#Portfolio">PORTFOLIO</a> <a class="nav-item nav-link" href="#Academic">ACADEMIC</a> <a class="nav-item nav-link" href="#Resume">RESUME</a> </div>
-  </div>
-</nav>
-<!---Hero--->
-<div>
-  <section id="hero" class="container-fluid px-0" style="background-color:black">
-    <div class="hero-image bg-image" style="background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.4)), url('img/Hero.jpg'); background-position:center; background-size:cover; height:100vh; text-align:center; background-attachment: fixed;">
-      <div id="h1-container" style="position:fixed; z-index:1; width:100%">
-          <h1 style="padding-top:50vh; padding-left:5px; padding-right:5px" class="typewrite" data-period="2000" data-type="Hey! 👋, I&#39;m Rob.🕺, I&#39;m a marketer who loves building compelling experiences.📲✨, Let&#39;s drive conversions and NPS through the roof.📈">
-    <span class="wrap"></span>
-  </h1>
-		  
-		  
-        <div class="bounce center-block" style="position:fixed; bottom:20px; width:100%"><a href="#Bio"><img src="down-arrow.svg" alt="bouncing arrow image"></a></div>
-      </div>
-    </div>
-  </section>
-  <!---Bio--->
-  <section class="container-fluid px-0 big" style="background-color:#FBFBFB; text-align:center; padding-bottom:20px; position:relative; z-index:900; min-height:110vh">
-    <div id="Bio" style="position:relative; top:-55px;"></div>
-    <h2 style="padding:7vh 20px; color:#242424" class="hideme">the full stack marketer.</h2>
-	 
-    <p style="max-width:800px; margin:auto; text-align:left; padding:0px 30px" class="hideme">
-		
-		If it were actually real and accepted title, I'm what you would call "A Full Stack Marketer." You could also go with less fun descriptors like "Generalist," "T-shaped," or maybe even a slightly more candid "Swiss Army Knife." They all get at more or less the same thing &mdash; someone whose value proposition as a professional is largely characterized by versatility. Being fortunate enough to spend the first four years of my career in a marketing rotational program, I've had exposure to a wide breadth of products, teams, and tools. I've explored the far reaches of both Marketing's art and science &mdash; everything from PMS color values to UTM tracking tags. Gravitating toward the technical side especially in my last couple rotations, I even ventured into the developer realm to teach myself HTML and CSS outside of work. In fact this website is actually all coded by hand &mdash; which was a personal challenge for myself to move my former website off of Squarespace. Definitely learned alot about DNS's in the process haha.<br><br><br><br>
 
-		 
-		
-		</p>
-		
-    
-  
-  </section>
-  <!---Toolbox--->
-  <div class="container-fluid bg-image" style="background-image:url('img/toolbox.jpg'); background-attachment: fixed; background-position:center; background-size:cover; text-align:center; position:relative; z-index:200; min-height:110vh">
-    <div id="Toolkit" style="position:relative; top:-54px"></div>
-    <div style="background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)); text-align:center; min-height:110vh" class="row center-block big">
-      <h2 style="padding-top:10vh; padding-bottom: 5vh; color:white; background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)); width:100%" class="hideme">My Toolbox</h2>
-      <div class="row" style="width:100%; padding:0; margin:0px 0px 80px 0px">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <div id="tool-1" style="background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)); margin:10px; color:#444; min-height:460px" class="hideme">
-            <h3 style="padding:15px 0px 0px 0px">Knowledge Areas</h3>
-            <ul style="text-align:left; padding-top:5px; padding-bottom:15px; padding-right:15px">
-              <li>Best practices on all Mktg channels</li>
-              <li>Benchmarks on all Mktg channels </li>
-				<li>Go-To-Market Strategy</li><li>Brand Building</li>
-              <li>Media Planning &amp; Buying</li>
-              <li>Organic &amp; Paid Social Media</li>
-              <li>Conference Planning and Events</li>
-              <li>Agency / Vendor Managment</li>
-              <li>Web Analytics &amp; Data Visualization</li>
-         
-              <li>Content Mgmt Systems (CMS)</li>
-              <li>Short-form copywriting</li>
-              <li>Print Collateral</li>
-              <li>Email Marketing</li>
-              <li>Direct Mail</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <div id="tool-2" style="background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)); margin:10px; color:white; min-height:460px" class="hideme">
-            <h3 style="padding:15px 0px 0px 0px; color:#444">Technologies</h3>
-            <ul style="text-align:left; padding-top:5px; padding-bottom:15px; padding-right:15px; color:#444">
-				<li>FB Ads Manager</li><li> LinkedIn Ad Manager </li>
-              <li>CSS3 / HTML5 / Bootstrap 4</li>
-              <li>Browser Dev Tools</li>
-              <li>Google Analytics / Looker / Tableau</li>
-              <li>HubSpot / Smashfly / Squarespace</li><li>Mailchimp</li>
-              <li>Slack / Jira / Confluence</li>
-              <li>UTM URL Builders</li>
-              <li>Powerpoint (Advanced)</li>
-              <li>Excel (Vlookups/Pivots)</li>
-				<li>Sketch</li>
-				<li>Invision (basic)</li>
-              <li>Adobe CC (Ps/Id/LR/Dw)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!---Work History--->
-  <div class="container-fluid big" style="background-color:#f5f5f5; position:relative; z-index:200">
-    <div id="WorkHistory" style="position:relative; top:-55px"></div>
-    <div class="col-12" style="margin:0; text-align:center">
-      <h2 style="padding:10vh 0vh" class="hideme">Professional Experience</h2>
-    </div>
-    <div class="col-12" style="padding-left:0px">
-      <h3 style="font-size:28px" class="hideme"> MassMutual <span style="font-size:20px"> // 2016-Present</span></h3>
-      
-    </div>
-	  <div class="row serif" style="width:100%; padding:0; margin:0">
-      <div class="col-sm-12 col-md-3 col-lg-3" style="text-align:right">
-        <p class="role hideme">Digital Adoption Product Owner</p>
-      </div>
-      <div class="col-sm-12 col-md-9 col-lg-9" style="padding-left:0px">
-        <ul>
-          <li style="padding-bottom:5px" class="hideme">Establishing and driving overall strategy for digital adoption marketing campaigns.</li>
-          <li style="padding-bottom:5px" class="hideme">Coordinating and leading a high-volume program of activations (such as letters, postcards, buckslips, email, and social) that reach six-figure audiences.</li>
-			<li style="padding-bottom:5px" class="hideme">Recommending new content and campaign opportunities based on VOC data, behavioral analytics, key business metrics and user session replay.</li>
-        </ul>
-		  </div></div>
-	      <div class="col-12">
-      <p id="ecp" style="font-size:20px; font-style:oblique; padding-left:0px; padding-right:0px; margin-left:0px; margin-right:0px; text-align:center !important" class="hideme">----As part of the Early Career Rotational Program----</p>
-    </div>
-    <div class="row serif" style="width:100%; padding:0; margin:0">
-      <div class="col-sm-12 col-md-3 col-lg-3" style="text-align:right">
-        <p class="role hideme">Talent Brand and Experience</p>
-      </div>
-      <div class="col-sm-12 col-md-9 col-lg-9">
-        <ul class="description-ul">
-          <li style="padding-bottom:5px" class="hideme">A first member of this new HR team that applies contemporary marketing practices to Recruiting.</li>
-          <li style="padding-bottom:5px" class="hideme">Support/led a marketing mix of: conferences and events, email, organic/paid social, job boards, SEO, and more.</li>
-          <li style="padding-bottom:5px" class="hideme">Led web analytics for careers.massmutual.com.</li>
-          <li style="padding-bottom:5px" class="hideme">Supported the refresh of MM's Employee Value Proposition (EVP).</li>
-        </ul>
-      </div>
-      <div class="col-sm-12 col-md-3 col-lg-3" style="text-align:right">
-        <p class="role hideme">LifeScore Labs</p>
-      </div>
-      <div class="col-sm-12 col-md-9 col-lg-9">
-        <ul  class="description-ul">
-          <li style="padding-bottom:5px" class="hideme">Helped plan and execute initial go-to-market strategy as the first marketer to join this ~8 month old fintech startup.</li>
-          <li style="padding-bottom:5px" class="hideme">Brought on and led rollout of HubSpot as the integrated CRM, CMS, and Marketing Automation platform of choice.</li>
-          <li style="padding-bottom:5px" class="hideme">Built numerous MVPs: social media, email, direct mail, PR, print, video, conference assets, media buys, a webinar, and more.</li>
-        </ul>
-      </div>
-      <div class="col-sm-12 col-md-3 col-lg-3" style="text-align:right">
-        <p class="role hideme">Integrated Marketing</p>
-      </div>
-      <div class="col-sm-12 col-md-9 col-lg-9">
-        <ul  class="description-ul">
-          <li style="padding-bottom:5px" class="hideme">Operated as an account manager on this new team that partnered with BUs to help execute coordinated campaigns.</li>
-          <li style="padding-bottom:5px" class="hideme">Helped manage nearly $100K in media across organic/paid social, industry media buys, email, and SEM.</li>
-        </ul>
-      </div>
-      <div class="col-sm-12 col-md-3 col-lg-3" style="text-align:right">
-        <p class="role hideme">Brand Management</p>
-      </div>
-      <div class="col-sm-12 col-md-9 col-lg-9">
-        <ul  class="description-ul">
-          <li style="padding-bottom:5px" class="hideme">Managed requests, and provided brand guidance, for the MassMutual logo.</li>
-          <li style="padding-bottom:5px" class="hideme">Part of this Fortune 100 company’s Brand Refresh team; contributing most notably to the corporate PPT templates.</li>
-        </ul>
-      </div>
-      <div class="col-12" style="padding:30px 0px 0px 0px">
-        <h3 style="font-size:28px" class="hideme"> Global Partners<span style="font-size:20px"> // Summer 2015</span></h3>
-      </div>
-      <div class="row" style="width:100%; padding:0; margin:0">
-        <div class="col-sm-12 col-md-12 col-lg-12 hideme" style="padding-left:0">
-          <p>As a <strong>Brand Marketing Intern</strong> I managed mystery shop reporting for this Fortune 300 energy company.</p>
-        </div>
-      </div>
-      <div class="col-12" style="padding:30px 0px 0px 0px">
-        <h3 style="font-size:28px" class="hideme">Mondelez Intl.<span style="font-size:20px"> // Summer 2014</span></h3>
-      </div>
-      <div class="row" style="width:100%; padding:0px 0px 60px 0px; margin:0">
-        <div class="col-sm-12 col-md-12 col-lg-12" style="padding-left:0">
-          <p class="hideme">As a <strong>Sales Representative Intern</strong> I shadowed vendors of this Fortune 200 snack company at grocery retail. </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<body>
 
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
 
-
-	
-	
-	
-<!---Portfolio Original--->
-<div class="container-fluid" style="background-color:#f5f5f5; text-align:center; position:relative; z-index:200; padding:0px; margin-top:0">
-  <div id="Portfolio" style="position:relative; top:-55px"></div>
-	<div style="padding:20vh 0px 20px 0px; background-color:#F5F5F5"><h2  class="hideme" style="margin:0px">Portfolio</h2></div>
-	<div class="row" style="position:relative; z-index:9999; color:white">
-  <div class="col-4">
-    <div class="list-group" id="list-tab" role="tablist">
-      <p class="list-group-item list-group-item-action active" id="list-artdirection-list" data-toggle="list" href="#list-artdirection" role="tab" aria-controls="Art Direction" style="margin:0px">Art Direction</p>
-      <p class="list-group-item list-group-item-action" id="list-design-list" data-toggle="list" href="#list-design" role="tab" aria-controls="Design" style="margin:0px">Design</p>
-      <p class="list-group-item list-group-item-action" id="list-development-list" data-toggle="list" href="#list-development" role="tab" aria-controls="Development" style="margin:0px">Development</p>
-      <p class="list-group-item list-group-item-action" id="list-events-list" data-toggle="list" href="#list-events" role="tab" aria-controls="Events" style="margin:0px">Events</p>
-		 <p class="list-group-item list-group-item-action" id="list-pm-list" data-toggle="list" href="#list-pm" role="tab" aria-controls="Project Mgmt" style="margin:0px">Project Mgmt</p>
-    </div>
-  </div>
-  <div class="col-8">
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="list-artdirection" role="tabpanel" aria-labelledby="list-artdirection-list">Art Direction</div>
-      <div class="tab-pane fade" id="list-design" role="tabpanel" aria-labelledby="list-design-list">Design</div>
-      <div class="tab-pane fade" id="list-development" role="tabpanel" aria-labelledby="list-development-list">Development</div>
-      <div class="tab-pane fade" id="list-events" role="tabpanel" aria-labelledby="list-events-list">Events</div>
-		      <div class="tab-pane fade" id="list-pm" role="tabpanel" aria-labelledby="list-pm-list">Project Mgmt</div>
-    </div>
-  </div>
-</div>
-	
-	
-    
-  </div>
-
-
-<!------Academic--->
-<div class="container-fluid big" style="padding-bottom:40px; background-color:#fbfbfb;
-color:#444; z-index:400; position:relative; min-height:95vh;">
-  <div id="Academic" style="position:relative; top:-55px"></div>
-  <div style="max-width:800px; margin:auto"><div class="col-12" style="margin:0; text-align:center; z-index:200">
-    <h2 style="padding:10vh 0px 20px 0px;" class="hideme">Academic</h2>
-  </div>
-  <div class="col-12" style="padding:10px 0px; text-align:left">
-    <h3 style="font-weight:bold; padding-bottom:10px; border-bottom: 2px solid #666" class="hideme">Graduate</h3>
-  </div>
-  <div class="row" style="width:100%; padding:0; margin:0; text-align:left">
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align:right">
-      <div class="row"><div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">
-		  <p class="role hideme" style="color:#444;">Umass Isenberg<br><span style="font-size:14px; font-weight:300;">Fall 2018 - Spring 2020</span></p>
-		</div></div></div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-      <p style="color:#444; margin-bottom:0px" class="hideme">4-course cohort offered through MM's rotational program. 4.0 GPA </p><ul><li class="hideme">Business Data Analysis & Stat. Methods // Spring 2020</li><li class="hideme">Business Intelligence and Analytics // Fall 2019</li><li class="hideme">Data Management for Leaders // Spring 2019</li><li class="hideme">Project Management // Fall 2018</li></ul>
-    </div>
-  </div><br>
-  <div class="col-12" style="padding:20px 0px 10px 0px; text-align:left;">
-    <h3 style="font-weight:bold; padding-bottom:10px; border-bottom: 2px solid #666" class="hideme">Undergraduate</h3>
-  </div>
-  <div class="row" style="width:100%; padding:0; margin:0; text-align:left;">
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align:right">
-      <p class="role hideme" style="color:#444">Bentley University<br>
-		  <span style="font-size:14px; font-weight:300"> 2013 - 2016</span></p>
-    </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-		<p style="margin-bottom:0px" class="hideme"><span style="color:#444">Graduated Summa Cum Laude (3.85 GPA) at age 20.</span></p><ul><li class="hideme">Honors Program</li><li class="hideme">Peer Tutor for the Office of Academic Services.</li></ul>
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align:right">
-      <p class="role hideme" style="color:#444;">Vermont Technical College<br>
-		  <span style="font-size:14px; font-weight:300">2012 - 2013</span> </p>
-    </div>
-    <div class="ccol-xs-12 col-sm-8 col-md-8 col-lg-8">
-      <p class="hideme"><span style="color:#444">11 courses taken as a high school senior. 3.97 GPA </span> </p>
-	  </div>
-  </div>
-	</div></div>
-<!------Contact--->
-<div class="container-fluid px-0 bg-image" style="padding-bottom:60px; background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.4)), url('img/iphone11.jpg'); background-position:center; background-size:cover; text-align:center; background-attachment:fixed; position:relative; z-index:300; min-height:84vh">
-  <div id="Resume" style="position:relative; top:-54px"></div>
-  <div class="col-12" style="margin:0; text-align:center; color:white">
-    <h2 style="padding:5vh" class="hideme">Let's Chat</h2>
-  </div>
-  <div class="row" style="width:100%; padding:0; margin:0;">
-    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align:center">
-		<p style="color:white; margin:5px 0px" class="hideme">rfmalinowski@gmail.com</p>
-		  <p style="color:white; margin:5px 0px" class="hideme">802-399-0780</p>
-		  <p style="color:white; margin:5px 0px 20px 0px" class="hideme">www.linkedin.com/in/robertmalinowski</p>
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align:center">
-      <a href="RobMalinowskiResume_July2020.pdf"><img src="img/robmalinowski_resume.jpg" style="max-width:250px; margin:auto; border-radius:10px" alt="robmalinowski_resume" class="center-block hideme">
-		  
-		  </a>
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#facts"><i class="bx bx-server"></i> <span>Facts</span></a></li>
+		   <li><a href="#skills"><i class="bx bx-bar-chart"></i> <span>Skills</span></a></li>
+		  <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
  
-      
-    </div>
-  </div>
-</div>
-<div class="container-fluid px-0" style="background-color:#2f2f2f; height:10vh; text-align:center; position:relative; z-index:999">
-  <h2 class="hideme" style="color:white; padding-top:4vh; font-size: 12px"> &copy; 2020 Rob Malinowski. All rights reserved.</h2>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="z-index:9999">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+       
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Rob Malinowski</h1>
+      <p><span class="typed" data-typed-items="Marketer, Designer, Developer, UI/UX advocate, Product Manager, Data Visualizer"></span></p>
+		<p>A well-rounded Marketer and go-getter.</p>
+      <div class="social-links">
+        <a href="www.linkedin.com/in/robertmalinowski" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+		         <a href="github.com/rmalino8" class="linkedin"><i class="bx bxl-github"></i></a>
       </div>
     </div>
-  </div>
-</div>
-	</body>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Borrowing terminology from software development, I'm what you would consider in the marketing world to be a "Full Stack Marketer." By this I mean that I have experience in all major marketing verticals and have a strong crossfunctional, strategic perspective on how to drive conversion. I'm also someone who cares deeply about the NPS of the user experience and whole-heartedly believes in never shipping a bad product. Those who work with me know my mantra is for us to together produce work that defines our careers.</p>
+        </div>
+
+
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Quick Facts</h2>
+          
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="icofont-eye-open"></i>
+              <span data-toggle="counter-up">2,000,000</span>
+              <p>Marketing Impressions Delivered</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="icofont-money"></i>
+              <span data-toggle="counter-up">900,000</span>
+              <p>Largest budget managed</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-tools"></i>
+              <span data-toggle="counter-up">20</span>
+              <p>Tools of Familiarity</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-users-alt-5"></i>
+              <span data-toggle="counter-up">4</span>
+              <p>Startup Teams</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Marketing Strategy <i class="val">10/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Web Analytics <i class="val">9/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Data Visualization <i class="val">9/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+			  
+			   <div class="progress">
+              <span class="skill">Organic &amp; Paid Social <i class="val">9.5/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+			  
+			   <div class="progress">
+              <span class="skill">Content Management Systems <i class="val">6.5/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div> <div class="progress">
+              <span class="skill">Graphic Design &amp; UI Strategy <i class="val">8.5/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+ <div class="progress">
+              <span class="skill">Short-form copywriting<i class="val">7.5/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">HTML/CSS/Bootstrap <i class="val">6/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Media Planning &amp; Buying <i class="val">9/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Modern PPT Design<i class="val">9.5/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+			  <div class="progress">
+              <span class="skill">Agency &amp; Vendor Management <i class="val">7.5/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+			  <div class="progress">
+              <span class="skill">Conference Planning &amp; Events <i class="val">7/10</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+			  
+			  
+			  
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>View my resume in PDF by clicking on the thumbnail below. </p>
+        </div>
+
+        <div class="row">
+        <div class="col-12">
+			<img src="assets/img/rmalinowski_resume.jpg" alt="Resume Thumbnail" style="max-width:400px; display:block; margin:auto; text-align:center">
+			
+			</div></div></div></section>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Hover over and click on the "+" to zoom in.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-Email">Email</li>
+              <li data-filter=".filter-DirectMail">Direct Mail</li>
+              <li data-filter=".filter-PaidSocial">Paid Social</li>
+			<li data-filter=".filter-WebDevelopment">Web Development</li>
+				  <li data-filter=".filter-Conferences">Conferences</li>
+			<li data-filter=".filter-VideoAssets">Video Assets</li>
+		<li data-filter=".filter-CRMCMS">CMS/CRMs</li>
+		<li data-filter=".filter-PopUps">Pop-ups</li>
+		<li data-filter=".filter-Display">Display</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Email">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/emailMockups2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Email</h4>
+           
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/emailMockups2.png" data-gall="portfolioGallery" class="venobox" title="Email"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-DirectMail">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Postcards.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Direct Mail</h4>
+              
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/Postcards.png" data-gall="portfolioGallery" class="venobox" title="Direct Mail"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-PopUps">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Modal6.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Pop-ups</h4>
+              
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/Modal6.png" data-gall="portfolioGallery" class="venobox" title="Pop-Ups"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-PaidSocial">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/fb_ads3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Paid Social</h4>
+               
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/fb_ads3.png" data-gall="portfolioGallery" class="venobox" title="Paid Social"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Display">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/display8.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Display</h4>
+                
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/display8.png" data-gall="portfolioGallery" class="venobox" title="Display"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-CRMCMS">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/LSLwebsite7.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>CMS/CRMs</h4>
+          
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/LSLwebsite7.png" data-gall="portfolioGallery" class="venobox" title="CMS/CRMs"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-VideoAssets">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/videoAssets4.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Video</h4>
+              
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/videoAssets4.png" data-gall="portfolioGallery" class="venobox" title="Video"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Conferences">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/witecBooth.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Conferences</h4>
+            
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/witecBooth.jpg" data-gall="portfolioGallery" class="venobox" title="Conferences"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-WebDevelopment">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Development5.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web Development</h4>
+            
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/Development5.png" data-gall="portfolioGallery" class="venobox" title="Web Development"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+   <!--- <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bx bxl-dribbble"></i>
+              </div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="bx bx-file"></i>
+              </div>
+              <h4><a href="">Sed Perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bx bx-tachometer"></i>
+              </div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                </svg>
+                <i class="bx bx-layer"></i>
+              </div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                </svg>
+                <i class="bx bx-slideshow"></i>
+              </div>
+              <h4><a href="">Dele Cardo</a></h4>
+              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-teal">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bx bx-arch"></i>
+              </div>
+              <h4><a href="">Divera Don</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> ---> <!-- End Services Section --> 
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+        </div>
+
+        <div class="owl-carousel testimonials-carousel" data-aos="zoom-in" data-aos-delay="100">
+
+       
+
+         
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/Sears.jpg" class="testimonial-img" alt="">
+            <h3>Sears Merritt</h3>
+            <h4>VP, Head of Data Strategy &amp; Architecture</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              For the past year, I had the pleasure of working with Rob while he was a member of LifeScore Labs. During that time, Rob was accountable for creating and executing a marketing strategy that brought our LifeScore360 product to market. Throughout the process, Rob brought strategic thinking, a focus on execution, and an all around great attitude to the team. I look forward to working with him again in the future.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/Scotty.jpg" class="testimonial-img" alt="">
+            <h3>Scotty Coleman</h3>
+            <h4>Director of Hospitality at Fidelity Investments</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Rob is one of the most engaging and committed team members I have had the pleasure working with. His dedication to the customer, and his team translated to loyalty. It has been awesome to see him grow his skill set in the digital marketing world and focus on the customer experience. It comes naturally to Rob, and I’d have him on my team whenever warranted in the future. 
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/Jill.jpg" class="testimonial-img" alt="">
+            <h3>Jill Hambley</h3>
+            <h4>Head of Consumer Insights and Consumer Experience</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Rob is smart, willing to work in ambiguity and a good problem solver. He is highly analytical and makes data-driven decisions. He also listens and works collaboratively across the organization. While on my team, he was a high-performing marketer and a pleasure to manage.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+		
+			 <div class="testimonial-item">
+            <img src="assets/img/testimonials/Sai.jpg" class="testimonial-img" alt="">
+            <h3>Sai He</h3>
+            <h4>Senior Copywriter &amp; Adweek Creative 100</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Lots of folks like to talk about how they’re analytical AND creative. But that’s the thing — it’s all talk. Rob is the rare person who actually delivers on both fronts. He brings clever thinking and a tireless work ethic to every project, every time.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+  </main><!-- End #main -->
+
+
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
